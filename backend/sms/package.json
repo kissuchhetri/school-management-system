@@ -1,0 +1,36 @@
+{
+  "name": "sms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles --forceExit --verbose",
+    "test:watch": "jest --watch --detectOpenHandles --forceExit",
+    "test:coverage": "jest --coverage --detectOpenHandles --forceExit",
+    "test:unit": "jest test/*.test.js --testPathIgnorePatterns=integration --detectOpenHandles --forceExit",
+    "test:integration": "jest test/integration.test.js --detectOpenHandles --forceExit",
+    "test:auth": "jest test/auth.test.js --detectOpenHandles --forceExit",
+    "test:assignment": "jest test/assignment.test.js --detectOpenHandles --forceExit",
+    "test:student": "jest test/student.test.js --detectOpenHandles --forceExit",
+    "test:simple": "jest --testNamePattern='should handle|should get|should create' --detectOpenHandles --forceExit",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.1",
+    "mysql2": "^3.14.1",
+    "nodemon": "^3.1.10",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "supertest": "^7.1.4"
+  }
+}
